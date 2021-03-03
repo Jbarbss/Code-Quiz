@@ -90,6 +90,7 @@ section {
     margin: 40px;
     margin-left: 25%;
     padding: 50px;
+    height: 315px;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
 
 }
@@ -118,8 +119,23 @@ section {
     background-color: #613a8d;
   }
 
+  #quizBox {
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    margin: 40px;
+    margin-left: 25%;
+    padding: 50px;
+    height: 315px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+
+}
+ 
+
   #quizBox #questions {
-    font-weight:700;
+    font-size: 40px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   }
 
   #quizBox button {
@@ -130,8 +146,9 @@ section {
     padding: 5px 5px ;
     cursor:pointer;
     display: block;
-    width: 100%;
+    width: 20%;
     text-align: left;
+    display: inline-block;
   }
   
   #quizBox button:hover {
