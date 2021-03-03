@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Code-Quiz</title>
-    <link rel="stylesheet" href="assets/style.css"/>
-    <link rel="stylesheet" href="assets/normalize.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <header class="container">
-        <button id="scores" href(#)>View High Scores</button>
-        <h1 id="title">Welcome to the Code Quiz</h1>
-        <div id="timer">
-            <p>Time Remaining:  <span id="time">0</span></p>
-        </div>
+      <button id="scores" href(#)>View High Scores</button>
+      <h1 id="headLine">Welcome to the Code Quiz</h1>
+      <div id="timer">
+        <p>Time Remaining: <span id="time">0</span></p>
+      </div>
     </header>
 
     <div id="mainContent">
-        <section id="intro">
-            <h1>Time to Test Your Code Knowledge</h1>
-            <h2>Answer as many questions as you can before time runs out.
-               Just remember, every incorrect answer will cost you 15 seconds.
-            </h2>
-            <button id="startBtn">Start Quiz</button>
-        </section>
+      <section id="intro">
+        <h1>Time to Test Your Code Knowledge</h1>
+        <h2>
+          Answer as many questions as you can before time runs out. Just
+          remember, every incorrect answer will cost you 15 seconds.
+        </h2>
+        <button id="startBtn">Start Quiz</button>
+      </section>
 
-        <section>
+      
+      <section id="quizBox" class="hide">
+          <p id="questions">Question</p>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <div id="scoreDisplay" class="invisible">
+              <p>&nbsp;</p>
+          </div>
+      </section>
 
+      <section id="complete" class="hide">
+          <h1>You Finished</h1>
+          <p>Your Score is is&nbsp;<span id="score"></span></p></p>
+          <div id="records">
+              <p>Enter Your Initials:</p><input id="initials" tyoe="text">
+              <button id="submitBtn ">Submit</button>
+          </div>
+      </section>
 
-        </section>
+      <section id="topScores" class="hide">
+          <h2>High Scores</h2>
+          <div>
+
+          </div>
+          <button id="reset">Play Again</button>
+          <button id="clearScore">Clear Scores</button>
+      </section>
     </div>
 
-
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+    <script src="assets/jss/questions.js"></script>
+    <script src="assets/jss/script.js"></script>
+  </body>
 </html>

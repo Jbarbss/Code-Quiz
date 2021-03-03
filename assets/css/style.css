@@ -64,7 +64,7 @@ body {
 }
 
 
-#title {
+#headLine {
 text-align: center;
 font-family: Copperplate, "Copperplate Gothic Light", fantasy;
 font-size: 50px;
@@ -102,7 +102,6 @@ section {
     color: white;
     border: none;
     border-radius: 15px;
-   
     cursor: pointer;
     letter-spacing: 0.21px;
     line-height: 25px;
@@ -115,6 +114,42 @@ section {
     margin-top: 1em;
 }
 
-#intro button:hover{
+#intro button:hover {
     background-color: #613a8d;
   }
+
+  #quizBox #questions {
+    font-weight:700;
+  }
+
+  #quizBox button {
+    background-color:#41275e;
+    border-radius:5px;
+    color:white;
+    margin: 3px 0;
+    padding: 5px 5px ;
+    cursor:pointer;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  
+  #quizBox button:hover {
+    background-color: #613a8d;
+  }
+
+  #records input, #records button{
+    margin-top:5px;
+    }
+    
+    .hide {
+      display:none;
+    }
+    
+    .invisible {
+      display:none;
+    }
+    
+    .disable {
+    pointer-events:none;
+    }
