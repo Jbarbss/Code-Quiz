@@ -9,7 +9,57 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header class="container">
+    <header class="containerHead">
+        <button id="scores" href(#)>View High Scores</button>
+        <h1 id="headLine">Welcome to the Code Quiz</h1>
+        <div id="timer">
+          <p>Time Remaining: <span id="time">0</span></p>
+        </div>
+      </header>
+    <div class="container"  id="startIntro">
+        <div id="intro">
+        <h1>Time to Test Your Code Knowledge</h1>
+        <ul>
+          <li>You Have 75 Seconds to Complete the Quiz.</li>
+          <li>Answer as many questions as you can before time runs out.</li>
+          <li>Wrong answer, loose you 10 points & 15 seconds off the timer.</li>
+          <li>Hit the "Next" button for the next question.</li>
+        </ul>
+    </div>
+      <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">Answer1</button>
+          <button class="btn">Answer2</button>
+          <button class="btn">Answer3</button>
+          <button class="btn">Answer4</button>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="start-btn btn hide">Next</button>
+      </div>
+    </div>
+    <div class="endContainer hide" id="submit-score">
+        <div id="gameEnd">
+            <h2>You Finished the Quiz!</h2>
+            <p class="score">Your score is: <span id="correctAnswers">0</span></p>
+            <br>
+            <br>
+            <form class="form-group">
+                <label for="new-score">Enter your name: </label>
+                <input type="text" id="userName">
+                <button type="button" class="btn submitBtn" id="submitBtn">Submit Score</button>
+            </form>
+        </div>
+    </div>
+
+  </body>
+  <script src="assets/jss/questions.js"></script>
+  <script src="assets/jss/script.js"></script>
+</html>
+
+<!-- <header class="container">
       <button id="scores" href(#)>View High Scores</button>
       <h1 id="headLine">Welcome to the Code Quiz</h1>
       <div id="timer">
@@ -29,13 +79,14 @@
 
       
       <section id="quizBox" class="hide">
-          <p id="questions">Question</p>
-          <div id ="answerBtn"></div>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <div id="scoreDisplay" class="invisible">
+          <div id="questions">Question</div>
+          <div id ="answerBtn"> </div>
+          <button><span id="choice"></span></button>
+          <button><span id="choice"></span></button>
+          <button><span id="choice"></span></button>
+          <button><span id="choice"></span></button>
+       
+          <div id="scoreDisplay"></div>
               <p>&nbsp;</p>
           </div>
       </section>
@@ -57,9 +108,7 @@
           <button id="reset">Play Again</button>
           <button id="clearScore">Clear Scores</button>
       </section>
-    </div>
-
+    </div> -->
+<!--   
     <script src="assets/jss/questions.js"></script>
-    <script src="assets/jss/script.js"></script>
-  </body>
-</html>
+    <script src="assets/jss/script.js"></script> -->
