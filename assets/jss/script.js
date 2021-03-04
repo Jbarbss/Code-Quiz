@@ -33,7 +33,7 @@ function startGame() {
 
 function timeAlert() {
   quizTimer = setInterval(() => {
-    if (timerTotal > 0) {
+    if (timerTotal >= 0) {
       timerEl.textContent = timerTotal;
       timerTotal--;
     } else if (timerTotal === 0) {
@@ -73,7 +73,6 @@ function resetState() {
 function selectAnswer(e) {
   var selectedButton = e.target;
   var correct = selectedButton.dataset.correct;
-  setStatusClass(document.body, correct);
   if (!correct) {
     timerTotal -= 10;
   }
@@ -107,11 +106,11 @@ function clearStatusClass(element) {
    element.classList.remove("wrong");
 }
 
-function gameOver(quizTimer) {
-    questionContainerEl.classList.add("hide")
-    startScreen.classList.add("hide")
-    submitScore.classList.remove("hide")
-clearInterval(quizTimer)
+function gameOver(timerTotal) {
+    questionContainerEl.classList.add("hide");
+    startScreen.classList.add("hide");
+    submitScore.classList.remove("hide");
+    clearInterval(quizTimer)
     
 }
 
@@ -134,51 +133,4 @@ function addScore () {
 }
 
 
-// var startBtn = document.getElementById("startBtn");
-// var timerEl = document.getElementById("time");
-// var submitBtn = document.getElementById("submitBtn");
-// var titleScreen = document.getElementById("intro");
-// var quizScreen = document.getElementById("quizBox");
-// var resetBtn = document.getElementById("reset");
-// var clearBtn = document.getElementById("clearScore")
-// var scoreDis = document.getElementById("scoreDisplay")
-// var questionEl = document.getElementById("questions")
-// var answerBtn = document.getElementById("answerBtn")
-// var choices = document.getElementById("choice")
 
-// var quizTimer;
-// var timerStart = 75;
-// var finalQuestionIndex = quizQuestions.length;
-// var currentQuestionIndex = 0;
-// var score = 0;
-
-// startBtn.addEventListener('click', startQuiz);
-
-// function startQuiz() {
-//     console.log("Started");
-//     titleScreen.classList.add("hide")
-//     quizScreen.classList.remove("hide")
-//     // scoreDis.classList.remove("hide")
-//     timerStart = 75;
-//     quizTimer = setInterval(timeAlert, 1000);
-//    showQuestion();
-// }
-
-// function timeAlert() {
-//     if (timerStart > 0) {
-
-//         timerStart--;
-//        return timerEl.textContent = timerStart;
-//     }
-
-//     clearInterval(quizTimer);
-// }
-
-// function showQuestion() {
-//     for (var i = 0; i < quizQuestions.length; i++) {
-//     var currentQuestion = quizQuestions[currentQuestionIndex];
-//     questionEl.innerHTML = currentQuestion.title;
-//     choices.textContent = currentQuestion.choices[i];
-
-//     }
-// }
