@@ -4,19 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Code-Quiz</title>
+    <title>High-Scores-Code-Quiz</title>
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <header class="containerHead">
+      <button id="scores" onclick='location.href="index.html"'>Home</button>
+      <h1 id="headLine">Code Quiz Hall of Fame</h1>
+      <div id="timer">
+        <p>Time Remaining: <span id="time">0</span></p>
+      </div>
+    </header>
     <main>
       <div class="container" id="highScore">
         <div class="scoreContainer">
           <h2>HIGH SCORES</h2>
           <h3>See How You Stack Up</h3>
           <ol id="listScores"></ol>
-          <button class="reset btn">PLAY AGAIN</button>
-          <button class="clearScore btn">Clear Scores</button>
+          <div class="btnGroup">
+            <button class="reset btn">PLAY AGAIN</button>
+            <button class="clearScore btn">Clear Scores</button>
+          </div>
         </div>
       </div>
     </main>

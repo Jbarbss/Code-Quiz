@@ -95,7 +95,7 @@ body {
 
 .container {
   width: 800px;
-  max-width: 80%;
+  max-width: 100%;
   height: 300px;
   background-color: white;
   border-radius: 5px;
@@ -105,7 +105,7 @@ body {
 
 .endContainer {
   width: 800px;
-  max-width: 80%;
+  max-width: 100%;
   height: 300px;
   background-color: white;
   border-radius: 5px;
@@ -163,6 +163,7 @@ font-size: 20px;
   padding: 10px 20px;
   color: white;
   outline: none;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -200,175 +201,15 @@ font-size: 20px;
   display: none;
 }
 
-/* * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+.btnGroup {
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 154px;
+  margin-left: 13px;
 }
 
-
-html {
-    height: 100%;
-    overflow: hidden;
-    width: 100%
+.scoreContainer  {
+  text-align: center;
 }
 
-body {
-    background-color:#127bfa;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: auto;
-    width: 100%;
-}
-
-.container {
-    padding: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color:#12232E;
-    color: white;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    width: 100%;
-}
-
-#scores {
-    position: absolute;
-    left: 140px;
-    top: 70px;
-    padding: 10px;
-    background-color:transparent;
-    color: white;
-    border-style: solid;
-    border-color: white;
-    border-radius: 15px;
-    font-size: larger;
-    font-weight: bolder;
-    border-width: 2px;
-    cursor: pointer;
-    
-}
-
-
-#timer {
-    font-size: larger;
-    font-weight: bolder;
-    position: absolute;
-    padding: 10px;
-    right: 140px;
-    top: 68Px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 15px;
-}
-
-
-#headLine {
-text-align: center;
-font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-font-size: 50px;
-
-}
-
-#mainContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-section {
-    max-width: 50%;
-    margin: 0 auto;
-}
-
-#intro {
-    text-align: center;
-    border-style: solid;
-    border-color: black;
-    border-radius: 15px;
-    margin: 40px;
-    margin-left: 25%;
-    padding: 50px;
-    height: 315px;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-
-}
-
-#startBtn {
-    background-color: #41275e;
-    font-size: 20px;
-    padding: 20px;
-    position: relative;
-    color: white;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    letter-spacing: 0.21px;
-    line-height: 25px;
-    max-width: 255px;
-    padding: 10px 32px;
-    text-align: center;
-    transition-duration: 0.15s;
-    transition-property: background-color;
-    transition-timing-function: linear;
-    margin-top: 1em;
-}
-
-#intro button:hover {
-    background-color: #613a8d;
-  }
-
-  #quizBox {
-    text-align: center;
-    border-style: solid;
-    border-color: black;
-    border-radius: 15px;
-    margin: 40px;
-    margin-left: 25%;
-    padding: 50px;
-    height: 315px;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-
-}
- 
-
-  #quizBox #questions {
-    font-size: 40px;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-  }
-
-  #quizBox button {
-    background-color:#41275e;
-    border-radius:5px;
-    color:white;
-    margin: 3px 0;
-    padding: 5px 5px ;
-    cursor:pointer;
-    display: block;
-    width: 20%;
-    text-align: left;
-    display: inline-block;
-  }
-  
-  #quizBox button:hover {
-    background-color: #613a8d;
-  }
-
-  #records input, #records button{
-    margin-top:5px;
-    }
-    
-    .hide {
-      display:none;
-    }
-    
-    .invisible {
-      display:none;
-    }
-    
-    .disable {
-    pointer-events:none;
-    } */
