@@ -24,7 +24,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+/* header  */
 .containerHead {
   padding: 25px;
   top: 2px;
@@ -41,7 +41,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+/* intro box section */
 #intro h1 {
   text-align: center;
   font-size: 25 px;
@@ -51,7 +51,7 @@ body {
   margin-left: 124px;
   font-size: 20px;
 }
-
+/* score section */
 #scores {
   position: absolute;
   left: 140px;
@@ -67,7 +67,7 @@ body {
   border-width: 2px;
   cursor: pointer;
 }
-
+/* timer */
 #timer {
   font-size: larger;
   font-weight: bolder;
@@ -107,9 +107,6 @@ body {
   font-size: 25px;
 }
 
-#gameEnd {
-  font-size: 20px;
-}
 
 #gameEnd h2 {
   text-align: center;
@@ -125,7 +122,7 @@ body {
 
 .form-group {
   margin-block: -40px;
-
+  font-size: 20px;
   margin-left: 35px;
 }
 
@@ -137,7 +134,7 @@ body {
   font-size: 1.5rem;
   text-align: center;
 }
-
+/* button styles */
 .btn-grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -188,16 +185,17 @@ body {
   right: 658px;
 }
 
-.hide {
-  display: none;
-}
-
 .btnGroup {
   font-size: 1.25rem;
   font-weight: bold;
   padding-top: 15px;
 }
 
+/* hides elements */
+.hide {
+  display: none;
+}
+/* high score section */
 .scoreContainer {
   text-align: center;
   font-size: 25px;
