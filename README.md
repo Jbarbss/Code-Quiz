@@ -44,7 +44,11 @@ Application will deploy live with no errors and all files can be seen in my Gith
 
 ### Deployed application screen shot
 
-![ScreenShot](assets/images/code-quiz.png "ScreenShot")
+![ScreenShot](assets/images/code-quiz-Main.png "Main Page")
+![ScreenShot](assets/images/code-quiz-Questions.png "Question Page")
+![ScreenShot](assets/images/code-quiz-answers.png "Answers Page")
+![ScreenShot](assets/images/code-quiz-gameover.png "Game Over Page")
+![ScreenShot](assets/images/code-quiz-highscore.png "High Scores Page")
 
 
 
