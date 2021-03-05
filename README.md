@@ -27,7 +27,7 @@
 
 ### Deployed application screen shot
 
-![ScreenShot](assets/images/Password-Generator-demo.png "ScreenShot")
+![ScreenShot](assets/images/code-quiz.png "ScreenShot")
 
 
 
