@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background-color: #127bfa;;
+  background-color: #127bfa;
   position: absolute;
   padding: 0;
   margin: 0;
@@ -28,9 +28,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  
 }
-
 
 .containerHead {
   padding: 25px;
@@ -115,15 +113,13 @@ body {
 }
 
 #gameEnd {
-font-size: 20px;
-
+  font-size: 20px;
 }
 
 #gameEnd h2 {
   text-align: center;
   font-size: 45px;
   padding-top: 24px;
-  
 }
 
 #gameEnd p {
@@ -133,9 +129,9 @@ font-size: 20px;
 }
 
 .form-group {
-    margin-block: -40px;
-    font-size: 25px;
-    margin-left: 35px;
+  margin-block: -40px;
+  font-size: 25px;
+  margin-left: 35px;
 }
 
 .submitBtn {
@@ -157,7 +153,7 @@ font-size: 20px;
 .btn {
   --hue: var(--hue-neutral);
   border: 1px solid hsl(var(--hue), 100%, 30%);
-  background-color: #12232E;
+  background-color: #12232e;
   border-radius: 5px;
   font-size: 1.5rem;
   padding: 10px 20px;
@@ -176,8 +172,8 @@ font-size: 20px;
 }
 
 .btn.wrong {
- background-color: red;
- color: whitesmoke;
+  background-color: red;
+  color: whitesmoke;
 }
 
 .start-btn,
@@ -202,14 +198,28 @@ font-size: 20px;
 }
 
 .btnGroup {
+   font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 125px;
+  margin-left: 13px; */
+ 
+}
 
+/* btnGroup {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 154px;
-  margin-left: 13px;
-}
+  margin-top: 70px;
+  margin-left: 185px;
+  position: absolute;
+} */
 
-.scoreContainer  {
+.scoreContainer {
   text-align: center;
+  font-size: 25px;
 }
 
+#listScores li {
+  margin-left: 168px;
+  width: 55%;
+
+}

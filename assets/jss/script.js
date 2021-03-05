@@ -1,3 +1,4 @@
+
 var startButton = document.getElementById("start-btn");
 var questionContainerEl = document.getElementById("question-container");
 var timerEl = document.getElementById("time");
@@ -5,18 +6,27 @@ var titleScreen = document.getElementById("intro");
 var questionElement = document.getElementById("question");
 var answerButtonElement = document.getElementById("answer-buttons");
 var nextButton = document.getElementById("next-btn");
-var submitScore = document.getElementById('submit-score');
+var submitScreen = document.getElementById("submit-score");
+var submitScore = document.getElementById("submitBtn");
 var startScreen = document.getElementById("startIntro");
 var quizTimer;
 
 let timerTotal = 75;
-let shuffledQuestions, currentQuestionIndex;
+let shuffledQuestions, currentQuestionIndex, userNameInput
 let correctAnswers = 0;
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
   currentQuestionIndex++;
   setNextQuestion();
+});
+
+submitScore.addEventListener("click",function (e) {
+  e.stopPropagation();
+  addScore();
+
+  window.location.href = "highscore.html"
+  
 });
 
 function startGame() {
@@ -109,7 +119,7 @@ function clearStatusClass(element) {
 function gameOver(timerTotal) {
     questionContainerEl.classList.add("hide");
     startScreen.classList.add("hide");
-    submitScore.classList.remove("hide");
+    submitScreen.classList.remove("hide");
     clearInterval(quizTimer)
     
 }
@@ -125,11 +135,11 @@ function addScore () {
     console.log(newScore);
     // check if there are any scores in local storage first and take value
     //if not, make a blank array
-    var highScores = JSON.parse(localStorage.getItem("highScores") || "[]");
+    var topScores = JSON.parse(localStorage.getItem("topScores") || "[]");
     // push object into score array
-    highScores.push(newScore)
+    topScores.push(newScore)
     // turn objects into an array of strings + put it into local storage
-    localStorage.setItem("highScores", JSON.stringify(highScores));
+    localStorage.setItem("topScores", JSON.stringify(topScores));
 }
 
 

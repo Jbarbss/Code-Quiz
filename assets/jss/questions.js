@@ -1,32 +1,31 @@
 var questions = [
   {
-    question: "Commonly used data types DO NOT include:",
+    question: "How many elements can you apply an 'ID' attribute to?",
     answers: [
-      { text: "alerts", correct: true },
-      { text: "booleans", correct: false },
-      { text: "strings", correct: false },
-      { text: "numbers", correct: false },
+      { text: "As many as you want", correct: false },
+      { text: "3", correct: false },
+      { text: "1", correct: true },
+      { text: "128", correct: false },
     ],
   },
 
   {
-    question:
-      "The condition in an if / else statement is enclosed within ____.",
+    question: "What does DOM stand for?",
     answers: [
-      { text: "quotes", correct: false },
-      { text: "curly brackets", correct: false },
-      { text: "parentheses", correct: true },
-      { text: "square brackets", correct: false },
+      { text: "Document Object Model", correct: true },
+      { text: "Display Object Management", correct: false },
+      { text: "Digital Ordinance Model", correct: false },
+      { text: "Desktop Oriented Mode", correct: false },
     ],
   },
 
   {
-    question: "Which of these is not used to loop?",
+    question: "What is used primarily to add styling to a web page?",
     answers: [
-      { text: "for", correct: false },
-      { text: "while", correct: false },
-      { text: "foreach", correct: false },
-      { text: "sequence", correct: true },
+      { text: "HTML", correct: false },
+      { text: "CSS", correct: true },
+      { text: "Python", correct: false },
+      { text: "Javascript", correct: false },
     ],
   },
 
@@ -42,12 +41,12 @@ var questions = [
 
   {
     question:
-      "JS date function starts in seconds to current day from what day in 1970",
+    "What HTML attribute references an external JavaScript file?",
     answers: [
-      { text: "January 1", correct: true },
-      { text: "December 31", correct: false },
-      { text: "May 29", correct: false },
-      { text: "April 3", correct: false },
+      { text: "href", correct: false },
+      { text: "class", correct: false },
+      { text: "index", correct: false },
+      { text: "src", correct: true },
     ],
   },
 ];
