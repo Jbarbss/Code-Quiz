@@ -1,4 +1,4 @@
-# Code-Quiz# Password-Generator
+# Code-Quiz
 
 1. [ Description. ](#desc)
 2. [ Web Address. ](#web-address)
