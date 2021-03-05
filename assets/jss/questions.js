@@ -1,3 +1,4 @@
+// questions with answers and true/false values
 var questions = [
   {
     question: "How many elements can you apply an 'ID' attribute to?",

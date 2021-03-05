@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Code-Quiz</title>
+    <!-- link to stylesheets -->
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- header with headline, button link to high score page and timer at 0 -->
     <header class="containerHead">
-        <button id="scores" onclick='location.href="Highscore.html"'>View High Scores</button>
-        <h1 id="headLine">Welcome to the Code Quiz</h1>
-        <div id="timer">
-          <p>Time Remaining: <span id="time">0</span></p>
-        </div>
-      </header>
-    <div class="container"  id="startIntro">
-        <div id="intro">
+      <button id="scores" onclick='location.href="Highscore.html"'>
+        View High Scores
+      </button>
+      <h1 id="headLine">Welcome to the Code Quiz</h1>
+      <div id="timer">
+        <p>Time Remaining: <span id="time">0</span></p>
+      </div>
+    </header>
+    <!-- Intro box that explains game  -->
+    <div class="container" id="startIntro">
+      <div id="intro">
         <h1>Time to Test Your Code Knowledge</h1>
         <ul>
           <li>You Have 75 Seconds to Complete the Quiz.</li>
@@ -25,7 +30,8 @@
           <li>Wrong answer, loose you 10 points & 15 seconds off the timer.</li>
           <li>Hit the "Next" button for the next question.</li>
         </ul>
-    </div>
+      </div>
+      <!-- hidden container for questions and answers that will appear when start button is pressed -->
       <div id="question-container" class="hide">
         <div id="question">Question</div>
         <div id="answer-buttons" class="btn-grid">
@@ -35,27 +41,32 @@
           <button class="btn">Answer4</button>
         </div>
       </div>
+      <!-- Buttons for start (to begin game) & next(is only shown after question is answered) -->
       <div class="controls">
         <button id="start-btn" class="start-btn btn">Start</button>
         <button id="next-btn" class="start-btn btn hide">Next</button>
       </div>
     </div>
+    <!-- hidden container when game is competed. gives score with ability to enter initials. -->
     <div class="endContainer hide" id="submit-score">
-        <div id="gameEnd">
-            <h2>You Finished the Quiz!</h2>
-            <p class="score">Your score is: <span id="correctAnswers">0</span></p>
-            <br>
-            <br>
-            <form class="form-group">
-                <label for="new-score">Enter your name: </label>
-                <input type="text" id="userName">
-                <button type="button" class="btn submitBtn" id="submitBtn">Submit Score</button>
-            </form>
-        </div>
+      <div id="gameEnd">
+        <h2>You Finished the Quiz!</h2>
+        <p class="score">Your score is: <span id="correctAnswers">0</span></p>
+        <br />
+        <br />
+        <form class="form-group">
+          <label for="new-score">Enter your Initials: </label>
+          <!-- limits initials input to 3 characters -->
+          <input type="text" maxlength="3" id="userName" />
+          <!-- button to submit score and take you to high score page -->
+          <button type="button" class="btn submitBtn" id="submitBtn">
+            Submit Score
+          </button>
+        </form>
+      </div>
     </div>
-
   </body>
+  <!-- link to javascript files -->
   <script src="assets/jss/questions.js"></script>
   <script src="assets/jss/script.js"></script>
 </html>
-

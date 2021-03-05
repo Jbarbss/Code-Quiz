@@ -7,11 +7,6 @@
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
 }
 
-:root {
-  --hue-neutral: 200;
-  --hue-wrong: 0;
-  --hue-correct: 145;
-}
 html {
   height: 100%;
   overflow: hidden;
@@ -130,7 +125,7 @@ body {
 
 .form-group {
   margin-block: -40px;
-  font-size: 25px;
+
   margin-left: 35px;
 }
 
@@ -198,19 +193,10 @@ body {
 }
 
 .btnGroup {
-   font-size: 1.25rem;
+  font-size: 1.25rem;
   font-weight: bold;
- 
- 
+  padding-top: 15px;
 }
-
-/* btnGroup {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 70px;
-  margin-left: 185px;
-  position: absolute;
-} */
 
 .scoreContainer {
   text-align: center;
@@ -220,5 +206,4 @@ body {
 #listScores li {
   margin-left: 168px;
   width: 55%;
-
 }
