@@ -1,5 +1,5 @@
-var resetBtn = document.querySelector("resetBtn");
-var clearScore = document.querySelector("clearScore");
+var resetBtn = document.querySelector("#resetBtn");
+var clearScore = document.querySelector("#clearScore");
 
 var topScore = JSON.parse(localStorage.getItem("topScores") || "[]");
 
@@ -17,13 +17,12 @@ for (var i = 0; i < topScore.length; i++) {
    
 }
 
-// resetBtn.addEventListener("click", () {
-//     window.location ="index.html"
+resetBtn.addEventListener("click", function () {
+    window.location.replace("./index.html");
     
-// });
+});
 
-clearScore.addEventListener("click", () => {
-        localStorage.clear();
-        window.location.reload();
-
+clearScore.addEventListener("click", function () {
+    localStorage.clear();
+    location.reload();
     });

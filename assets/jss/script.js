@@ -29,6 +29,8 @@ submitScore.addEventListener("click",function (e) {
   
 });
 
+
+
 function startGame() {
   startButton.classList.add("hide");
   titleScreen.classList.add("hide");
